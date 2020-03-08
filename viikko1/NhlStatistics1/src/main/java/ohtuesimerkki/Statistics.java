@@ -5,11 +5,11 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class Statistics {
+public class Statistics  {
 
     private List<Player> players;
 
-    public Statistics() {
+    public Statistics(Reader newreader) {
         PlayerReader reader = new PlayerReader("https://nhlstatisticsforohtu.herokuapp.com/players.txt");
         players = reader.getPlayers();       
     }
